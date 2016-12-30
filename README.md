@@ -27,5 +27,5 @@ for {
 
 # License
 
-Copyright 2016 Olivier Poitrey <rs@rhapsodyk.net>. All rights reserved.
+Copyright 2016 Olivier Poitrey. All rights reserved.
 Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.
