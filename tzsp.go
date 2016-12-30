@@ -133,8 +133,8 @@ var (
 	ErrMissingEndTag = errors.New("packet truncated (no END tag)")
 )
 
-// Read reads a packet bytes and parse the contained TZSP packet.
-func Read(b []byte) (p Packet, err error) {
+// Parse reads a packet bytes and parse the contained TZSP packet.
+func Parse(b []byte) (p Packet, err error) {
 	p.Header, err = parseHeader(b)
 	if err != nil {
 		return

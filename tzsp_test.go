@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestRead(t *testing.T) {
+func TestParse(t *testing.T) {
 	tests := []struct {
 		name   string
 		in     []byte
@@ -76,7 +76,7 @@ func TestRead(t *testing.T) {
 		},
 	}
 	for _, tt := range tests {
-		if got, err := Read(tt.in); err != tt.err {
+		if got, err := Parse(tt.in); err != tt.err {
 			t.Errorf("Failed %s\ngot err %#v, \nwant %#v", tt.name, err, tt.err)
 		} else if !reflect.DeepEqual(got, tt.result) {
 			t.Errorf("Failed %s\ngot  %#v, \nwant %#v", tt.name, got, tt.result)

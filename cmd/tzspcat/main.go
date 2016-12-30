@@ -27,7 +27,7 @@ func main() {
 		if err != nil {
 			panic(err)
 		}
-		p, err := tzsp.Read(buf[:l])
+		p, err := tzsp.Parse(buf[:l])
 		if err != nil {
 			panic(err)
 		}
